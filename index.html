@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freddy's Furniture — Custom Crafted for Your Space</title>
+  <meta name="description" content="Handpicked furniture pieces where modern aesthetics meet lasting quality. Built by Freddy, for Freddy." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; connect-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="debug.css" />
+</head>
+<!-- ===================== NAVBAR ===================== -->
+<header class="site-header" id="top">
+  <nav class="nav container">
+    <a href="#top" class="nav__logo" aria-label="Freddy's Furniture home">
+      <svg class="nav__logo-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 11V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3" />
+        <path d="M3 13a2 2 0 0 1 4 0v1h10v-1a2 2 0 0 1 4 0v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3z" />
+        <path d="M5 20v-2M19 20v-2" />
+      </svg>
+      <span>Freddy's</span>
+    </a>
+
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#top" class="nav__link is-active">Home</a></li>
+      <li><a href="#featured" class="nav__link">Freddy's Picks</a></li>
+      <li><a href="#collections" class="nav__link">Freddy's Collections</a></li>
+      <li><a href="#recommended" class="nav__link">Freddy's Rooms</a></li>
+      <li><a href="#contact" class="nav__link">Contact Freddy</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <button class="icon-btn" type="button" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m20 20-3.5-3.5" />
+        </svg>
+      </button>
+      <button class="icon-btn" type="button" aria-label="Account">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5" />
+        </svg>
+      </button>
+      <button class="btn btn--dark btn--sm js-alert" type="button" data-message="Login coming soon!">Login</button>
+      <button class="nav__toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content container">
+      <h1 class="hero__title">Transform Your Space With Furniture Built for Freddy</h1>
+      <p class="hero__text">Custom curated pieces where modern aesthetics meet lasting quality. Every piece handpicked for your space, your style.</p>
+      <button class="btn btn--light js-alert" type="button" data-message="Taking you to the collection!">View Collection <span
+          aria-hidden="true">→</span></button>
+      <div class="hero__dots" aria-hidden="true">
+        <span class="dot dot--active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED CATEGORIES ===================== -->
+  <section class="featured section" id="featured">
+    <div class="container featured__grid">
+<div class="featured__text">
+        <h2 class="section__eyebrow">Freddy's Picks</h2>
+        <h3 class="section__title section__title--left">Explore by the way you live</h3>
+        <p class="featured__body">At Freddy's Furniture we believe furniture should do more than fill a space, it should elevate it. Our mission is to blend functional design with timeless appeal, all at an honest price.</p>
+      </div>
+      <figure class="featured__media">
+        <img
+          src="https://www.designersofas4u.co.uk/images/pictures/news/black-corner-sofa-in-a-bright-neutral-living-room-with-elegant-classic-interior.jpg"
+          alt="Elegant dark sofa in a styled living room" class="card-image-class">
+
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== OUR NEW COLLECTIONS ===================== -->
+  <section class="collections section" id="collections">
+    <div class="container">
+      <h2 class="section__title">Freddy's Collections</h2>
+
+      <div class="products">
+        <article class="product-card">
+          <div class="product-card__media">
+            <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=1920&q=80"
+              alt="Freddy's Armchair" class="product-card__image">
+            <span class="product-card__colors"><i style="--c:#2b3a55"></i><i style="--c:#b3402e"></i><i
+                style="--c:#d9b98a"></i></span>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Freddy's Choice</span>
+            <h3 class="product-card__name">Freddy's Armchair</h3>
+            <p class="product-card__price">$180.00</p>
+            <button class="btn btn--outline btn--xs js-alert" type="button" data-message="Freddy's Armchair — $180.00">View
+              Details</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__media">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=85"
+              alt="Freddy's Sofa">
+            <span class="product-card__colors"><i style="--c:#1f2d3d"></i><i style="--c:#4f79b8"></i><i
+                style="--c:#c0392b"></i></span>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Freddy's Choice</span>
+            <h3 class="product-card__name">Freddy's Sofa</h3>
+            <p class="product-card__price">$190.00</p>
+            <button class="btn btn--outline btn--xs js-alert" type="button" data-message="Freddy's Sofa — $190.00">View
+              Details</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__media">
+            <img src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&w=1920&q=80"
+              alt="Freddy's Coffee Table" class="product-card__image">
+            <i style="--c:#7a5230"></i><i style="--c:#2b3a55"></i><i style="--c:#b3402e"></i></4>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Freddy's Choice</span>
+            <h3 class="product-card__name">Freddy's Coffee Table</h3>
+            <p class="product-card__price">$200.00</p>
+            <button class="btn btn--outline btn--xs js-alert" type="button"
+              data-message="Freddy's Coffee Table — $200.00">View Details</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__media">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1920&q=80
+" alt="Freddy's Lounge Chair">
+            <span class="product-card__colors"><i style="--c:#2b3a55"></i><i style="--c:#8a5a44"></i><i
+                style="--c:#d9b98a"></i></span>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Freddy's Choice</span>
+            <h3 class="product-card__name">Freddy's Lounge Chair</h3>
+            <p class="product-card__price">$150.00</p>
+            <button class="btn btn--outline btn--xs js-alert" type="button"
+              data-message="Freddy's Lounge Chair — $150.00">View Details</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__media">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=85"
+              alt="Freddy's Accent Chair" class="product-card__image">
+            <span class="product-card__colors"><i style="--c:#b3402e"></i><i style="--c:#d9b98a"></i><i
+                style="--c:#2b3a55"></i></span>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Freddy's Choice</span>
+            <h3 class="product-card__name">Freddy's Accent Chair</h3>
+            <p class="product-card__price">$190.00</p>
+            <button class="btn btn--outline btn--xs js-alert" type="button"
+              data-message="Freddy's Accent Chair — $190.00">View Details</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-card__media">
+            <img src="https://images.unsplash.com/photo-1550254478-ead40cc54513?auto=format&fit=crop&w=800&q=85"
+              alt="Freddy's Striped Sofa">
+            <span class="product-card__colors"><i style="--c:#4f79b8"></i><i style="--c:#1f2d3d"></i><i
+                style="--c:#c0392b"></i></span>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Freddy's Choice</span>
+            <h3 class="product-card__name">Freddy's Striped Sofa</h3>
+            <p class="product-card__price">$220.00</p>
+            <button class="btn btn--outline btn--xs js-alert" type="button" data-message="Freddy's Striped Sofa — $220.00">View
+              Details</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="section__cta">
+        <button class="btn btn--outline js-alert" type="button" data-message="Loading Freddy's full collection!">See Freddy's
+          Full Collection</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RECOMMENDED WITH STYLE ===================== -->
+  <section class="recommended section" id="recommended">
+    <div class="container">
+      <h2 class="section__title">Freddy's Rooms</h2>
+      <p class="section__sub">Curated pieces that bring comfort and elegance to Freddy's space – effortlessly.</p>
+
+      <div class="recommended__grid">
+        <a href="#collections" class="room-card room-card--tall">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+            alt="Freddy's Living Room" class="card-image-class">
+          <div class="room-card__label">
+            <h3>Freddy's Living Room</h3>
+            <span class="btn btn--light btn--xs js-alert" role="button" tabindex="0"
+              data-message="Browsing Freddy's living room!">View Freddy's Collection <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+        <a href="#collections" class="room-card">
+          <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=800&q=80"
+            alt="Freddy's Bedroom" class="card-image-class">
+
+          <div class="room-card__label">
+            <h3>Freddy's Bedroom</h3>
+            <span class="btn btn--light btn--xs js-alert" role="button" tabindex="0"
+              data-message="Browsing Freddy's bedroom!">View Freddy's Collection <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+        <a href="#collections" class="room-card">
+          <img src="https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=800&q=80"
+            alt="Freddy's Dining Room" class="card-image-class">
+          <div class="room-card__label">
+            <h3>Freddy's Dining Room</h3>
+            <span class="btn btn--light btn--xs js-alert" role="button" tabindex="0"
+              data-message="Browsing Freddy's dining room!">View Freddy's Collection <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+        <a href="#collections" class="room-card room-card--wide">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80"
+            alt="Freddy's Office" class="card-image-class">
+          <div class="room-card__label">
+            <h3>Freddy's Office</h3>
+            <span class="btn btn--light btn--xs js-alert" role="button" tabindex="0"
+              data-message="Browsing Freddy's office!">View Freddy's Collection <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHAT SETS US APART ===================== -->
+  <section class="apart section">
+    <div class="container">
+      <h2 class="section__title">What Sets us Apart?</h2>
+
+      <div class="apart__grid">
+        <div class="apart__item apart__item--1">
+          <h3>1. Freddy's Design</h3>
+          <p>Clean lines, Neutral colors, Our pieces are designed to look great today—and even better over time.</p>
+        </div>
+        <div class="apart__item apart__item--2">
+          <h3>2. Freddy's Quality</h3>
+          <p>We craft with durable, eco-friendly materials built to stand the test of everyday life</p>
+        </div>
+        <figure class="apart__circle">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+            alt="Freddy's Living Room" class="product-card__image">
+        </figure>
+        <div class="apart__item apart__item--3">
+          <h3>3. Freddy's Comfort</h3>
+          <p>From sofas to chairs, comfort is never compromised. Because beauty means nothing without function.</p>
+        </div>
+        <div class="apart__item apart__item--4">
+          <h3>4. Freddy's Delivery</h3>
+          <p>Fast, Safe, and stress-free delivery so your dream furniture arrives beautifully, sooner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+<section class="faq section" id="contact">
+    <div class="container faq__inner">
+      <h2 class="section__title">Freddy's Questions & Answers</h2>
+      <p class="section__sub">Still have questions in mind? Freddy's got answers.</p>
+      <button class="btn btn--dark js-alert" type="button"
+        data-message="Freddy will reach out personally!">Contact Freddy <span aria-hidden="true">→</span></button>
+
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>What is the estimated delivery time for my order?</span>
+            <svg class="faq__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Most orders are delivered within 5–10 business days, depending on your location and the items
+              purchased.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>Do you offer Customization options for furniture?</span>
+            <svg class="faq__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Yes — select pieces can be customized in fabric, color, and finish. Reach out and Freddy'll walk you
+              through the options.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>What is your return and exchange policy?</span>
+            <svg class="faq__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>You can return or exchange unused items within 30 days of delivery, in their original packaging.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>What Payment methods do you accept?</span>
+            <svg class="faq__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>We accept all major debit and credit cards, bank transfers, and selected mobile payment options.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>Do you offer furniture assembly services?</span>
+            <svg class="faq__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Yes, professional assembly is available at checkout for a small additional fee in most areas.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>How can I track my order status?</span>
+            <svg class="faq__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Once your order ships, you'll receive a tracking link by email and SMS so you can follow it in real
+              time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BANNER ===================== -->
+  <section class="cta">
+    <div class="cta__bg" aria-hidden="true"></div>
+    <div class="cta__overlay" aria-hidden="true"></div>
+    <div class="cta__content container">
+      <h2 class="cta__title">Build Freddy's Dream Space With Custom Interior</h2>
+      <p class="cta__text">Looking for a contemporary and pleasing interior design for Freddy's space? sit back and
+        watch
+        Freddy's dream come true.</p>
+      <button class="btn btn--light js-alert" type="button" data-message="Taking Freddy to the collection!">Freddy's Collection <span
+          aria-hidden="true">→</span></button>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Freddy's Furniture. All rights reserved. Built by Freddy, for Freddy.</p>
+  </div>
+</footer>
+
+<script src="debug.js"></script>
+</body>
+
+</html>

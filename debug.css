@@ -622,19 +622,21 @@ button {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: url("https://unsplash.com/photos/brown-wooden-rocking-chair-near-green-potted-plant-l9nngSmvCVY");
+  background-image: url("https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .cta__overlay {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-image: url("https://chrislovesjulia.com/wp-content/uploads/2025/11/061A9294-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("https://chrislovesjulia.com/wp-content/uploads/2025/11/061A9294-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  min-height: 100%;
 }
 
 .cta__content {

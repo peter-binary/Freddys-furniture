@@ -1,6 +1,9 @@
 # Freddy's Furniture
 Freddy's custom furniture website — built by Freddy, for Freddy.
 
+## Live Site
+**https://peter-binary.github.io/Freddys-furniture/**
+
 ## Deploy to GitHub Pages
 1. Create a new repo on GitHub
 2. Push this code: `git push origin main`

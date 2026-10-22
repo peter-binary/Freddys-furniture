@@ -253,13 +253,13 @@ button {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image: url("https://st.hzcdn.com/simgs/69b1ef830257655b_14-5265/_.jpg"
-    );
+  background-image: url("https://st.hzcdn.com/simgs/69b1ef830257655b_14-5265/_.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 100%;
+  animation: kenBurns 20s ease-in-out infinite alternate;
 }
 
 .hero__overlay {
@@ -273,6 +273,16 @@ button {
   background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
+  animation: kenBurns 25s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes kenBurns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.12) translate(2%, 2%);
+  }
 }
 
 .hero__content {
@@ -626,6 +636,7 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation: kenBurns 18s ease-in-out infinite alternate;
 }
 
 .cta__overlay {
@@ -637,6 +648,7 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation: kenBurns 22s ease-in-out infinite alternate-reverse;
 }
 
 .cta__content {

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://peter-binary.github.io/Freddys-furniture/sitemap.xml

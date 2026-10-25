@@ -11,7 +11,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="debug.css" />
+  <!-- Freddy's SEO and favicon insert -->
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" href="assets/icons/favicon-32-0.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/icons/favicon-32-1.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Freddy's Furniture" />
+  <meta name="twitter:description" content="Quality furniture supplied, delivered, and installed." />
+  <meta name="twitter:image" content="assets/icons/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Freddy's Furniture" />
+  <meta property="og:description" content="Quality furniture supplied, delivered, and installed." />
+  <meta property="og:image" content="assets/icons/apple-touch-icon.png" />
+  <meta property="og:url" content="https://peter-binary.github.io/Freddys-furniture/" />
+  <meta property="og:site_name" content="Freddy's Furniture" />
 </head>
 
 <svg style="display: none;" aria-hidden="true">
@@ -61,6 +75,75 @@
     <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
   </symbol>
 </svg>
+
+<!-- ===================== ANNOUNCEMENT BAR ===================== -->
+<div class="announcement-bar" role="status" aria-live="polite">
+  <div class="announcement-bar__content container">
+    <p class="announcement-bar__message">
+      <svg class="announcement-bar__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Questions? Chat with us on WhatsApp: <a href="https://wa.me/2348112002735" class="announcement-bar__link">+234 811 200 2735</a></span>
+      <span class="announcement-bar__divider" aria-hidden="true">·</span>
+      <span>Free delivery on orders over $500</span>
+      <span class="announcement-bar__divider" aria-hidden="true">·</span>
+      <span>30-day returns · Secure checkout</span>
+    </p>
+    <button class="announcement-bar__close" aria-label="Dismiss announcement" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- ===================== TOP BAR ===================== -->
+<div class="top-bar" role="navigation" aria-label="Quick links">
+  <div class="top-bar__content container">
+    <nav class="top-bar__nav" aria-label="Quick links">
+      <ul class="top-bar__list">
+        <li><a href="#about" class="top-bar__link">About Freddy's</a></li>
+        <li><a href="#contact" class="top-bar__link">Contact Us</a></li>
+        <li><a href="#tracking" class="top-bar__link">Order Tracking</a></li>
+        <li><a href="#wishlist" class="top-bar__link">Wishlist</a></li>
+        <li><a href="#customization" class="top-bar__link">Customization</a></li>
+      </ul>
+    </nav>
+    <div class="top-bar__contact">
+      <a href="tel:+2348112002735" class="top-bar__phone">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>+234 811 200 2735</span>
+      </a>
+      <a href="mailto:info@freddysfurniture.com" class="top-bar__email">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>info@freddysfurniture.com</span>
+      </a>
+    </div>
+    <div class="top-bar__switchers">
+      <div class="top-bar__switcher" id="languageSwitcher">
+        <button class="top-bar__switcher-btn" aria-expanded="false" aria-haspopup="listbox" aria-label="Select language">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="top-bar__switcher-label">English</span>
+          <svg class="top-bar__switcher-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <ul class="top-bar__switcher-menu" role="listbox" aria-label="Languages">
+          <li role="option" data-lang="en" aria-selected="true"><svg class="top-bar__flag" aria-hidden="true" viewBox="0 0 24 24"><rect fill="#012169" width="24" height="24"/><rect fill="#fff" width="24" height="4" y="10"/><rect fill="#fff" width="4" height="24" x="10"/><rect fill="#c8102e" width="24" height="2" y="11"/><rect fill="#c8102e" width="2" height="24" x="11"/></svg> English</li>
+          <li role="option" data-lang="zh"><svg class="top-bar__flag" aria-hidden="true" viewBox="0 0 24 24"><rect fill="#de2910" width="24" height="24"/><circle fill="#ffde00" cx="7" cy="7" r="5"/><circle fill="#ffde00" cx="17" cy="7" r="1.5"/><circle fill="#ffde00" cx="7" cy="17" r="1.5"/><circle fill="#ffde00" cx="12" cy="12" r="2.5"/><circle fill="#ffde00" cx="17" cy="17" r="1.5"/></svg> 中文</li>
+          <li role="option" data-lang="fr"><svg class="top-bar__flag" aria-hidden="true" viewBox="0 0 24 24"><rect fill="#0055a4" x="0" y="0" width="8" height="24"/><rect fill="#fff" x="8" y="0" width="8" height="24"/><rect fill="#ef4135" x="16" y="0" width="8" height="24"/></svg> Français</li>
+        </ul>
+      </div>
+      <div class="top-bar__switcher" id="currencySwitcher">
+        <button class="top-bar__switcher-btn" aria-expanded="false" aria-haspopup="listbox" aria-label="Select currency">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M6 12h12"/></svg>
+          <span class="top-bar__switcher-label">USD</span>
+          <svg class="top-bar__switcher-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <ul class="top-bar__switcher-menu" role="listbox" aria-label="Currencies">
+          <li role="option" data-currency="USD" aria-selected="true">$ USD</li>
+          <li role="option" data-currency="NGN">₦ NGN</li>
+          <li role="option" data-currency="GBP">£ GBP</li>
+          <li role="option" data-currency="EUR">€ EUR</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ===================== NAVBAR ===================== -->
 <header class="site-header" id="top">
@@ -657,6 +740,23 @@
     </div>
   </div>
 </footer>
+
+<!-- Floating WhatsApp button -->
+<a class="wa-float" href="https://wa.me/2348112002735" target="_blank" rel="noopener" aria-label="Chat with Freddy's on WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor" aria-hidden="true">
+    <path d="M16 .8C7.6.8.8 7.6.8 16c0 2.8.7 5.5 2.1 7.9L.8 31.2l7.5-2c2.3 1.2 5 1.9 7.7 1.9 8.4 0 15.2-6.8 15.2-15.1S24.4.8 16 .8zm0 27.5c-2.4 0-4.8-.7-6.9-1.9l-.5-.3-4.4 1.2 1.2-4.3-.3-.5A12.2 12.2 0 0 1 3.7 16C3.7 9.3 9.2 3.7 16 3.7S28.3 9.3 28.3 16 22.8 28.3 16 28.3zm6.9-9.2c-.4-.2-2.3-1.2-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.4.3-.8.1-2.6-1.2-4.4-3.4-4.9-4-.2-.3 0-.5.2-.7l.7-.8c.2-.3.3-.4.5-.7.1-.3 0-.5 0-.7-.2-.5-1-2.4-1.4-3.2-.4-.9-.8-.7-1.1-.7h-.9c-.3 0-.8.1-1.2.6-1.4 1.4-1.8 3.4-1.4 5.3.5 2.2 2.1 5 4.6 7 3.9 3 5.5 3.3 6.6 3.1 1.2-.2 2.5-1 2.9-2 .4-.9.4-1.7.3-1.9-.1-.2-.3-.3-.5-.4z"/>
+  </svg>
+</a>
+
+<!-- Cart popup -->
+<div class="cart-popup" id="cartPopup" role="dialog" aria-modal="false" aria-hidden="true">
+  <div class="cart-popup-head">
+    <strong>Your Cart</strong>
+    <button class="cart-popup-close" id="cartPopupClose" aria-label="Close cart">&#10005;</button>
+  </div>
+  <div class="cart-popup-body" id="cartPopupBody"></div>
+  <a class="cart-popup-cta" href="https://wa.me/2348112002735" target="_blank" rel="noopener">Checkout via WhatsApp</a>
+</div>
 
 <script src="debug.js"></script>
 </body>

@@ -1409,3 +1409,14 @@ button {
     transition: none !important;
   }
 }
+/* WhatsApp float + cart popup */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:9998;width:60px;height:60px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .2s}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+.cart-popup{position:fixed;bottom:96px;right:24px;z-index:9999;background:#fff;border:1px solid #e5e5e5;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.2);padding:16px;width:320px;max-width:calc(100vw - 32px);display:none}
+.cart-popup.is-open{display:block}
+.cart-popup-close{position:absolute;top:8px;right:10px;background:none;border:none;font-size:20px;cursor:pointer;color:#555}
+.cart-popup-cta{display:block;margin-top:12px;padding:10px;background:#25d366;color:#fff;text-align:center;border-radius:8px;text-decoration:none;font-weight:600}
+.cart-popup-item{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid #eee;font-size:14px}
+@media (max-width:600px){.cart-popup{right:16px;left:16px}}
+@media (prefers-reduced-motion:reduce){.wa-float{transition:none}}

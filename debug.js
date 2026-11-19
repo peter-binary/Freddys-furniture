@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 
   const navToggle = document.getElementById("navToggle");
   const navLinks  = document.getElementById("navLinks");
@@ -74,3 +75,4 @@
       navToggle.setAttribute("aria-expanded", "false");
     });
   });
+});

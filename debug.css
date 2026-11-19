@@ -1420,3 +1420,17 @@ button {
 .cart-popup-item{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid #eee;font-size:14px}
 @media (max-width:600px){.cart-popup{right:16px;left:16px}}
 @media (prefers-reduced-motion:reduce){.wa-float{transition:none}}
+
+/* --- DARK MODE STYLES --- */
+[data-theme="dark"] {
+  --bg: #121212;
+  --surface: #1e1e1e;
+  --ink: #f0f0f0;
+  --muted: #a0a0a0;
+  --line: #333333;
+  --white: #1e1e1e;
+}
+
+body, header, section, .card, .top-bar, .site-header, .product-card__info {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
